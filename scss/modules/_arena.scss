@@ -1,0 +1,17 @@
+.arena{
+    position: relative;
+    width: 600px;
+    height: 360px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin: 0 auto;
+    overflow: hidden;
+    &::after{
+        content: "";
+        height: 360px;
+        border: 2px dashed black;
+        box-sizing: border-box;
+        position: absolute;
+        left: calc(50% - 2px);
+    }
+}

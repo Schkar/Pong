@@ -1,0 +1,13 @@
+.instructionsContainer{
+    width: 600px;
+    height: 67px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    transition: height 1s;
+    border: 1px solid black;
+    &.open{
+        height: 170px;
+        transition: height 1s;
+    }
+}

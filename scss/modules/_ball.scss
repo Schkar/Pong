@@ -1,0 +1,11 @@
+.ball{
+    width: 20px;
+    height: 20px;
+    border: 2px solid red;
+    border-radius: 50%;
+    background-color: greenyellow;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+    //transition: left 0.1s, top 0.1s;
+}

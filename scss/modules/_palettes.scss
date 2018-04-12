@@ -1,0 +1,16 @@
+.palette{
+    width: 25px;
+    height: 120px;
+    position: absolute;
+    box-sizing: border-box;
+    border: 2px solid black;
+    top: calc(50% - 60px);
+    transition: top 0.3s;
+    &.leftPalette{
+        background-color: black;
+        left: 20px;
+    }
+    &.rightPalette{
+        right: 20px;
+    }
+}

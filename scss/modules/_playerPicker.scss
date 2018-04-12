@@ -1,0 +1,32 @@
+.playerPickerContainer{
+    position: relative;
+    text-align: center;
+    width: 600px;
+    height: 360px;
+    z-index: 2;
+    background-color: grey;
+    .playerPickerText{
+        position: absolute;
+        width: 100%;
+        top: 10%;
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+    .playerPickerButton{
+        position: absolute;
+        display: inline-block;
+        height: 50px;
+        width: 200px;
+        top: calc(50% - 25px);
+        font-size: 2em;
+        font-weight: bold;
+        background-color: lightblue;
+        border-radius: 15px;
+        &.computer{
+            left: 20px;
+        }
+        &.player{
+            right: 20px;
+        }
+    }
+}

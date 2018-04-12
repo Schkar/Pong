@@ -1,0 +1,157 @@
+.headerContainer {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.instructionsContainer {
+  width: 600px;
+  height: 67px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  -webkit-transition: height 1s;
+  -o-transition: height 1s;
+  transition: height 1s;
+  border: 1px solid black;
+}
+
+.instructionsContainer.open {
+  height: 170px;
+  -webkit-transition: height 1s;
+  -o-transition: height 1s;
+  transition: height 1s;
+}
+
+.pointsContainer {
+  width: 600px;
+  height: 80px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.pointsContainer .pointBox {
+  margin-top: 20px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.pointsContainer .pointBox .points {
+  border: 2px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.arena {
+  position: relative;
+  width: 600px;
+  height: 360px;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.arena::after {
+  content: "";
+  height: 360px;
+  border: 2px dashed black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  left: calc(50% - 2px);
+}
+
+.playerPickerContainer {
+  position: relative;
+  text-align: center;
+  width: 600px;
+  height: 360px;
+  z-index: 2;
+  background-color: grey;
+}
+
+.playerPickerContainer .playerPickerText {
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.playerPickerContainer .playerPickerButton {
+  position: absolute;
+  display: inline-block;
+  height: 50px;
+  width: 200px;
+  top: calc(50% - 25px);
+  font-size: 2em;
+  font-weight: bold;
+  background-color: lightblue;
+  border-radius: 15px;
+}
+
+.playerPickerContainer .playerPickerButton.computer {
+  left: 20px;
+}
+
+.playerPickerContainer .playerPickerButton.player {
+  right: 20px;
+}
+
+.startScreen {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 360px;
+  z-index: 2;
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.palette {
+  width: 25px;
+  height: 120px;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid black;
+  top: calc(50% - 60px);
+  -webkit-transition: top 0.3s;
+  -o-transition: top 0.3s;
+  transition: top 0.3s;
+}
+
+.palette.leftPalette {
+  background-color: black;
+  left: 20px;
+}
+
+.palette.rightPalette {
+  right: 20px;
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  border: 2px solid red;
+  border-radius: 50%;
+  background-color: greenyellow;
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+}
+
+.footerContainer {
+  width: 50%;
+  margin: 50px auto;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
